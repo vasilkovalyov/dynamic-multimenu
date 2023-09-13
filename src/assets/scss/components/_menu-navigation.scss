@@ -1,0 +1,83 @@
+$primary: #0d6efd;
+$white: #ffffff;
+$grey: #f0f0f0;
+$black: #000000;
+
+.menu-navigation {
+  max-width: 320px;
+  width: 100%;
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 14px 20px;
+  }
+
+  &__link {
+    position: relative;
+    color: $black;
+    text-transform: capitalize;
+    display: block;
+    padding: 14px 30px 14px 20px;
+    width: 100%;
+    text-align: left;
+    transition: color 0.2s linear, background-color 0.2s linear;
+
+    &:hover {
+      color: $primary;
+    }
+
+    .icon-arrow-down {
+      font-size: 24px;
+    }
+
+    .icon-chain {
+      font-size: 14px;
+      right: 16px;
+    }
+  }
+
+  &__link--active {
+    color: $primary;
+  }
+
+  &__link--active &__link-post-icon {
+    transform: scale(-1) translateY(50%);
+  }
+
+  &__link--active[href] {
+    color: $white;
+    background-color: $primary;
+  }
+
+  &__link-pre-icon {
+    margin-right: 10px;
+  }
+
+  &__link-post-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  &__menu--level-0 > &__menu-item > &__menu {
+    padding-left: 27px;
+  }
+
+  &__menu-level-1 {
+    background-color: $grey;
+  }
+
+  &__menu &__menu {
+    padding-left: 14px;
+  }
+
+  &__menu--close {
+    display: none;
+  }
+
+  &__menu--open {
+    display: block;
+  }
+}
