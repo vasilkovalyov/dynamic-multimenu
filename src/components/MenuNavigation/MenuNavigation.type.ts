@@ -1,4 +1,4 @@
-import { IActiveMenuType, IMenuNavigation } from '../../redux/types/menu';
+import { IActiveMenuType, IMenuNavigation } from 'src/redux/types/menu';
 
 export type MenuNavigationType = {
   menuItems: IMenuNavigation[];

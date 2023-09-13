@@ -60,7 +60,7 @@ function App() {
   function onClick4() {
     dispatch(updateMenu([]));
   }
-  
+
   return (
     <Layout>
       <p>

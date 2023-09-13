@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { IActiveMenuType, IMenuNavigation } from '../types/menu';
-import menu from '../../assets/menu';
+import menu from 'public/menu';
 
 export interface IMenuNavigationState {
   menu: IMenuNavigation[];

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import MenuNavigation from '../MenuNavigation/MenuNavigation';
-import { setMenuFromLC } from '../../redux/slices';
+import { MenuNavigation } from 'src/components';
+import { setMenuFromLC } from 'src/redux/slices';
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks';
 
 export default function Header() {
   const dispatch = useAppDispatch();

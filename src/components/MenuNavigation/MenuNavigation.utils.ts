@@ -1,4 +1,4 @@
-import { IActiveMenuType } from '../../redux/types/menu';
+import { IActiveMenuType } from 'src/redux/types/menu';
 
 export function getFormatString(str: string): string {
   const strArr = str.split('.');

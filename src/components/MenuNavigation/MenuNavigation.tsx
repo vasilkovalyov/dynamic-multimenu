@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames';
 
-import { MenuNavigationType } from './MenuNavigation.type';
-import { IActiveMenuType } from '../../redux/types/menu';
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { updateMenu } from '../../redux/slices';
 import MenuNavigationItem from './MenuNavigationItem';
+import { MenuNavigationType } from './MenuNavigation.type';
+
+import { IActiveMenuType } from 'src/redux/types/menu';
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks';
+import { updateMenu } from 'src/redux/slices';
 
 export default function MenuNavigation({ menuItems }: MenuNavigationType) {
   const dispatch = useAppDispatch();

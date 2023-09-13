@@ -19,7 +19,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Import Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "public/*": ["./public/*"],
+      "src/*": ["./src/*"]
+    }
   },
   "include": ["src", "public/menu.js"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,4 +1,4 @@
-import { Header } from '../components';
+import { Header } from 'src/components';
 import { LayoutType } from './Layput.type';
 
 export default function Layout({ children }: LayoutType) {
